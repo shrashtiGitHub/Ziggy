@@ -1,0 +1,188 @@
+.navbar{
+    background-color: #0b0b0b;
+}
+.brand {
+    position: absolute;
+    left: 40%;
+}
+.nav li a{
+    color:white;
+}
+.nav li a:hover{
+    color: #818181;
+    background-color: #0b0b0b;
+}
+.sidenav {
+    height: content-box;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 25%;
+    right: 0;
+    background-color: #0b0b0b;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+.sidenav ul li a {
+    padding: 8px 32px 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+
+}
+.sidenav ul li a:hover {
+    color: #818181;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 36px;
+
+}
+.tagline img{
+    color: white;
+}
+.banner img{
+    width: 50%;
+}
+* {
+    box-sizing: border-box;
+}
+
+/*.item {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    padding-top: 75px;
+    background: #ccc;
+    text-align: center;
+    color: #FFF;
+    font-size: 3em;
+}*/
+
+/* Split the screen in half */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    height: 500px;
+    padding: 100px 100px 200px 1000px;
+    background-color: #0b0b0b;
+}
+
+.header h1 {
+    font-family: Algerian;
+    font-size: 72px;
+    color: white;
+}
+
+.header h5{
+    font-family: consolas, sans-serif;
+    padding-top: 30px;
+    color: #fd7e14;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
+
+.rig-img:hover
+{
+    transform:scale(1.05);
+}
+
+a .rig-overlay {
+    position: absolute;
+    margin: auto;
+    background: #3DC0F1 no-repeat center 20%;
+    background-size:50px 50px;
+    opacity:0.5;
+    transition:all 0.9s;
+}
+
+a .rig-img:hover .rig-overlay{
+    opacity:0.8;
+}
+
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Oswald', sans-serif;
+    top:50%;
+    color:yellow;
+    opacity: 0;
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+
+.column a .rig-img:hover .rig-text{
+    transform:translateY(0px);
+    opacity:0.9;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
